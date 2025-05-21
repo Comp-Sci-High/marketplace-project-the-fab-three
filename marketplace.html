@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Freedom AI Marketplace</title>
+  <link rel="stylesheet" href="marketplace.css" />
+  </head>
+<body>
+  <nav>
+    <div class="logo">Freedom AI</div>
+    <div class="dropdown">
+      <button class="dropbtn">☰ Menu</button>
+      <div class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">Clothes</a>
+        <a href="#">Shoes</a>
+        <a href="#">Essentials</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="marketplace-container">
+    <aside class="filters">
+      <h3>Filters</h3>
+      <label><input type="checkbox" /> Clothes</label><br />
+      <label><input type="checkbox" /> Shoes</label><br />
+      <label><input type="checkbox" /> Food</label><br />
+      <label><input type="checkbox" /> On Sale</label><br />
+    </aside>
+
+    <div class="carousel-wrapper">
+      <button class="nav-button" onclick="scrollCarousel(-1)">&#10094;</button>
+
+      <div class="carousel" id="carousel">
+        <div class="item-card">
+          <img src="https://www.keefegroup.com/wp-content/uploads/2023/07/securepak-foods_043019.png" alt="Shoes" />
+          <h4>Care Box</h4>
+          <p>$39.99</p>
+          <button onclick="goToItemPage()">Buy Now</button>
+        </div>
+        <div class="item-card">
+          <img src="https://www.cratejoy.com/cdn/shop/products/bx27LCcgSCSemB88L70v.jpg?v=1698441306" alt="Food" />
+          <div class="sale-badge">25% OFF</div>
+
+<!-- rest of the card -->
+
+          <div class="sale-badge">🔖 25% OFF</div>
+          <h4>Snack Box</h4>
+          <p>$12.49</p>
+          <button onclick="goToItemPage()">Buy Now</button>
+        </div>
+        <div class="item-card">
+          <img src="https://m.media-amazon.com/images/I/81E+4Kc33fL._AC_UY1000_.jpg" alt="Shirt" />
+          <h4>Shirts</h4>
+          <p>$18.00</p>
+          <button onclick="goToItemPage()">Buy Now</button>
+        </div>
+      </div>
+
+      <button class="nav-button" onclick="scrollCarousel(1)">&#10095;</button>
+    </div>
+  </div>
+   <script src="script.js"></script>
+</body>
+</html>
